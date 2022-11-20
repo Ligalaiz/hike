@@ -1,0 +1,67 @@
+@use './variables';
+
+@mixin fontz($s, $h, $c) {
+  font-size: $s;
+  line-height: $h;
+  color: $c;
+}
+
+@mixin header-52 {
+  @include fontz(5.2rem, 1.45, $white-fff);
+  font-weight: 700;
+}
+
+@mixin header-31 {
+  @include fontz(3.1rem, 1.2, $white-fff);
+  font-weight: 700;
+}
+
+@mixin header30 {
+  @include fontz(3rem, 1, $black-100);
+  font-weight: 700;
+}
+
+@mixin header-24 {
+  @include fontz(2.4rem, 1.55, $black-030);
+}
+
+@mixin header-23 {
+  @include fontz(2.3rem, 1.2, $white-fff);
+}
+
+@mixin header-22 {
+  @include fontz(2.2rem, 1, $white-fff);
+}
+
+@mixin header-21 {
+  @include fontz(2.1rem, 1.55, $black-030);
+}
+
+@mixin header-20 {
+  @include fontz(2.0rem, 1.2, $white-fff);
+  font-weight: 700;
+}
+
+@mixin text-19 {
+  @include fontz(1.9rem, 1.5, $black-222);
+}
+
+@mixin text-18 {
+  @include fontz(1.8rem, 1.3, $black-222);
+}
+
+@mixin text-16 {
+  @include fontz(1.6rem, 1.5, $black-222);
+}
+
+@mixin text-15 {
+  @include fontz(1.6rem, 1.6, $black-222);
+}
+
+@mixin text-14 {
+  @include fontz(1.4rem, 1.4, $black-222);
+}
+
+@mixin text-13 {
+  @include fontz(1.3rem, 1.84, $grey-8b8);
+}
