@@ -46,38 +46,42 @@
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <div class="header__logo logo">
-            <img class="logo__img" src="../../assets/img/logo.png" alt="logo" />
+          <div class="header__wrap">
+            <div class="header__logo logo">
+              <img class="logo__img" src="../../assets/img/logo.png" alt="logo" />
+            </div>
+            <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Преимущества</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Характеристики</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Комплектация</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Отзывы</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Доставка/оплата</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav class="header__nav nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="#">Преимущества</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Характеристики</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Комплектация</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Отзывы</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Доставка/оплата</a>
-              </li>
-            </ul>
-          </nav>
         </div>
       </header>
       <main class="main">
-        <div class="container">
-          <section class="benefits">
+        <section class="benefits">
+          <div class="container">
             <h1 class="benefits__subtitle">Многофункциональная лопата +пила +топор +нож</h1>
-            <h2 class="benefits__title">Походный <span class="benefits__title--yellow">набор 4 в 1 </span></h2>
+            <h2 class="benefits__title">Походный <span class="benefits__title--yellow">набор 4 в 1</span></h2>
             <div class="benefits__content">
               <div class="benefits__left">
-                <div class="benefits__guarantee">до <span>10</span> лет гарантии</div>
+                <div class="benefits__guarantee">
+                  до&nbsp;<span class="benefits__guarantee--bold">10</span>&nbsp;лет гарантии
+                </div>
               </div>
               <div class="benefits__right right-benefits">
                 <div class="right-benefits__title">Набор для выживания в экстремальных условиях №1</div>
@@ -87,12 +91,13 @@
                   <li class="right-benefits__item">Весь комплект помещается в 1 подсумок</li>
                 </ul>
                 <div class="right-benefits__btn btn-benefits">
-                  <div class="btn-benefits">
-                    <p class="btn-benefits__price"><span>3980 руб.</span>1990 руб.</p>
-                    <a class="btn_benefits__btn btn-order" href="#">Заказать сейчас</a>
+                  <div class="btn-benefits__price">
+                    <p class="btn-benefits__price-old">3980 руб.</p>
+                    <p class="btn-benefits__price-new">1990 руб.</p>
                   </div>
+                  <a class="btn-benefits__btn btn-order" href="#">Заказать сейчас</a>
                 </div>
-                <div class="right-benefits__timer-benefits term-benefits">
+                <div class="right-benefits__term-benefits term-benefits">
                   <p class="term-benefits__text">Успей пока цена снижена:</p>
                   <div class="term-benefits__timer timer-benefits">
                     <div class="timer-benefits__hours">13ч</div>
@@ -102,14 +107,16 @@
                 </div>
               </div>
             </div>
-          </section>
-          <section class="tools">
+          </div>
+        </section>
+        <section class="tools">
+          <div class="container">
             <p class="tools__subtitle">Походный набор</p>
             <h2 class="tools__title">
               Оборудован практически
               <span class="tools__title--green">всеми необходимыми инструментами</span>
             </h2>
-            <div class="tools__subtitle">
+            <div class="tools__text">
               Смело можете очищать рюкзак от десятка лишних инструментов и класть в него всего один -
               многофункциональную лопату! В частности, лопату можно использовать не только по своему прямому назначению,
               но также как:
@@ -119,19 +126,19 @@
                 <div class="tools__img-wrap">
                   <img class="tools__img" src="../../assets/img/axe.png" alt="axe" />
                 </div>
-                <p class="tools__text">Топор</p>
+                <p class="tools__desc">Топор</p>
               </li>
               <li class="tools__item">
                 <div class="tools__img-wrap">
                   <img class="tools__img" src="../../assets/img/knife.png" alt="knife" />
                 </div>
-                <p class="tools__text">Нож</p>
+                <p class="tools__desc">Нож</p>
               </li>
               <li class="tools__item">
                 <div class="tools__img-wrap">
                   <img class="tools__img" src="../../assets/img/saw.png" alt="saw" />
                 </div>
-                <p class="tools__text">Пилу</p>
+                <p class="tools__desc">Пилу</p>
               </li>
             </ul>
             <div class="tools__reason reason-tools">
@@ -150,35 +157,47 @@
                 <a class="right-reason__btn btn-order" href="#">Оформить заказ</a>
               </div>
             </div>
-          </section>
-          <section class="excellence">
+          </div>
+        </section>
+        <section class="excellence">
+          <div class="container">
             <p class="excellence__subtitle">Почему профессионалы используют наш походный набор?</p>
-            <h2 class="excellence__title"><span>Лучшее снаряжение</span> для активного отдыха</h2>
+            <h2 class="excellence__title">
+              <span class="excellence__title--green">Лучшее снаряжение</span> для активного отдыха
+            </h2>
             <ul class="excellence__list">
               <li class="excellence__item item-exellence">
-                <p class="item-exellence__title">Особо прочные материалы</p>
-                <p class="item-exellence__text">
-                  При производстве инструмента держится ориентир на высокое качество материалов, фурнитуры и
-                  изготовления
-                </p>
+                <div class="item-exellence__wrap">
+                  <p class="item-exellence__title">Особо прочные материалы</p>
+                  <p class="item-exellence__text">
+                    При производстве инструмента держится ориентир на высокое качество материалов, фурнитуры и
+                    изготовления
+                  </p>
+                </div>
               </li>
               <li class="excellence__item item-exellence">
-                <p class="item-exellence__title">Долгое время не нуждается в заточке</p>
-                <p class="item-exellence__text">
-                  Сделана из нержавеющей стали японского производства. Она очень долгое время не нуждается в заточке, не
-                  ржавеет и удобная в применении.
-                </p>
+                <div class="item-exellence__wrap">
+                  <p class="item-exellence__title">Долгое время не нуждается в заточке</p>
+                  <p class="item-exellence__text">
+                    Сделана из нержавеющей стали японского производства. Она очень долгое время не нуждается в заточке,
+                    не ржавеет и удобная в применении.
+                  </p>
+                </div>
               </li>
               <li class="excellence__item item-exellence">
-                <p class="item-exellence__title">Весь комплект в 1 подсумке</p>
-                <p class="item-exellence__text">
-                  Набор отличается небольшими размерами, поэтому его удобно брать с собой в любую поездку, на охоту или
-                  рыбалку.
-                </p>
+                <div class="item-exellence__wrap">
+                  <p class="item-exellence__title">Весь комплект в&nbsp;1&nbsp;подсумке</p>
+                  <p class="item-exellence__text">
+                    Набор отличается небольшими размерами, поэтому его удобно брать с собой в любую поездку, на охоту
+                    или рыбалку.
+                  </p>
+                </div>
               </li>
             </ul>
-          </section>
-          <section class="characteristic">
+          </div>
+        </section>
+        <section class="characteristic">
+          <div class="container">
             <p class="characteristic__subtitle">новые стандарты качества и функциональности!</p>
             <h2 class="characteristic__title">Технические характеристики набора</h2>
             <div class="characteristic__content">
@@ -216,29 +235,37 @@
                   </tbody>
                 </table>
                 <div class="characteristic__guarantee guarantee-characteristic">
-                  <button class="guarantee-characteristic__btn">10 Летняя гарантия <span>общие условия</span></button>
-                  <p class="characteristic__title">
-                    Гарантия вступает в силу в день покупки и действует в течение срока, указанного ниже:
-                  </p>
-                  <ul class="guarantee-characteristic__list">
-                    <li class="guarantee-characteristic__item">
-                      10 лет, с момента покупки товара, распространяется на полотно лопаты и на рукояти.
-                    </li>
-                    <li class="guarantee-characteristic__item">
-                      гарантия 1 год, с момента покупки товара, распространяется на все остальные комплектующие.
-                    </li>
-                  </ul>
+                  <div class="guarantee-characteristic__btn-wrap">
+                    <button class="guarantee-characteristic__btn">
+                      <span class="guarantee-characteristic__btn--thick">10 Летняя гарантия</span> общие условия
+                    </button>
+                  </div>
+                  <div class="guarantee-characteristic__content-wrap">
+                    <p class="guarantee-characteristic__title">
+                      Гарантия вступает в силу в день покупки и действует в течение срока, указанного ниже:
+                    </p>
+                    <ul class="guarantee-characteristic__list">
+                      <li class="guarantee-characteristic__item">
+                        10 лет, с момента покупки товара, распространяется на полотно лопаты и на рукояти.
+                      </li>
+                      <li class="guarantee-characteristic__item">
+                        гарантия 1 год, с момента покупки товара, распространяется на все остальные комплектующие.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div class="characteristic__right right-characteristic">
                 <div class="right-characteristic__img-wrap">
                   <img class="right-characteristic__img" src="../../assets/img/tools.png" alt="tools" />
                 </div>
-                <a class="right-characteristic__btn btn-order" href="#">Заказать со скидкой</a>
               </div>
+              <a class="right-characteristic__btn btn-order" href="#">Заказать со скидкой</a>
             </div>
-          </section>
-          <section class="feedback">
+          </div>
+        </section>
+        <section class="feedback">
+          <div class="container">
             <h2 class="feedback__title">Отзывы наших покупателей</h2>
             <ul class="feedback__list">
               <li class="feedback__item message">
@@ -313,8 +340,10 @@
             </ul>
             <p class="feedback__notice">Отзывы предоставлены покупателями нашего интернет‑магазина</p>
             <a class="feedback__btn btn-order" href="#">Заказать со скидкой</a>
-          </section>
-          <section class="delivery">
+          </div>
+        </section>
+        <section class="delivery">
+          <div class="container">
             <div class="delivery__title">Доставка и оплата</div>
             <ul class="delivery__list">
               <li class="delivery__item item-delivery">
@@ -343,8 +372,10 @@
                 </p>
               </li>
             </ul>
-          </section>
-          <section class="form">
+          </div>
+        </section>
+        <section class="form">
+          <div class="container">
             <p class="form__subtitle">Многофункциональная лопата +пила +топор +нож</p>
             <h2 class="form__title">Походный набор 4 в 1</h2>
             <div class="form__content">
@@ -372,14 +403,18 @@
                 </div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
-        <div class="footer__address">
-          ООО "Курьер-сервис" ИНН 9705160948/ОГРН 1217700510994 г.Москва, ул. Пятницкая, д. 37
+        <div class="container">
+          <div class="footer__address">
+            <p>ООО "Курьер-сервис"</p>
+            <p>ИНН 9705160948/ОГРН 1217700510994</p>
+            <p>г.Москва, ул. Пятницкая, д. 37</p>
+          </div>
+          <a class="footer__policy" href="https://hiking.mad-clicker.com/privacypolicy">Политика конфиденциальности</a>
         </div>
-        <div class="footer__policy">Политика конфиденциальности</div>
       </footer>
     </div>
   </body>
