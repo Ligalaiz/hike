@@ -1,0 +1,141 @@
+@use '../../assets/styles/internals/index';
+
+.characteristic {
+  padding: 4rem 0;
+
+  background-color: $grey-f4f;
+
+  &__subtitle {
+    margin-bottom: 0.5rem;
+
+    @include header-17;
+    line-height: 1.4;
+    color: $black-030;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+
+    @include header-24;
+    line-height: 1.2;
+    color: $black-030;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 3rem;
+
+    & td {
+      font-size: 1.4rem;
+    }
+
+    & td:nth-child(odd) {
+      padding: 1.3rem 0 1.3rem 0.5rem;
+      border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    & tr:nth-child(odd) td {
+      background-color: $white-100;
+    }
+
+    & td:nth-child(even) {
+      padding: 1.3rem 0.5rem 1.3rem 0;
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+  }
+}
+
+.guarantee-characteristic {
+  &__content-wrap {
+    position: relative;
+
+    display: none;
+    width: 100%;
+    max-width: 30rem;
+    padding: 0 1.5rem 1.5rem;
+    border-radius: 0 0 0.6rem 0.6rem;
+    margin: 0 auto;
+
+    color: $white-100;
+
+    background-color: $green-919;
+  }
+
+  &__btn-wrap {
+    position: relative;
+
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+
+    &:before {
+      content: '';
+      position: absolute;
+
+      right: 1rem;
+      top: 50%;
+
+      width: 1rem;
+      height: 1rem;
+      border: 0.2rem solid $white-100;
+      border-top: none;
+      border-right: none;
+
+      transform: translateY(-50%) rotate(-45deg);
+    }
+
+    &.active:before {
+      transform: translateY(-50%) rotate(136deg);
+    }
+
+    &.active .guarantee-characteristic__btn {
+      border-radius: 0.6rem 0.6rem 0 0;
+    }
+
+    &.active + .guarantee-characteristic__content-wrap {
+      display: block;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    max-width: 30rem;
+    border-radius: 0.6rem;
+    padding: 1.5rem;
+
+    color: $white-100;
+    text-align: left;
+
+    background-color: $green-919;
+
+    &--thick {
+      display: block;
+      margin-bottom: 0.5rem;
+
+      @include header-20;
+      line-height: 1.1;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.characteristic__right {
+  margin: 3rem 0;
+}
+
+.right-characteristic {
+  &__img-wrap {
+    position: relative;
+
+    width: 100%;
+    max-width: 30rem;
+    padding-bottom: 30.6rem;
+    margin: 0 auto;
+  }
+}
