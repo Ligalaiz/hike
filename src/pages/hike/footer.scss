@@ -1,0 +1,21 @@
+@use '../../assets/styles/internals/index';
+
+.footer {
+  padding: 4rem 0 3rem;
+
+  &__address {
+    padding: 3rem 0;
+
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__policy {
+    display: block;
+
+    font-size: 1.4rem;
+    color: $grey-6C6;
+    text-align: center;
+  }
+}
