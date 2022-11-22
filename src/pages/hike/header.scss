@@ -1,0 +1,25 @@
+@use '../../assets/styles/internals/index';
+
+.header {
+  padding: 3rem 0 2rem;
+
+  background-image: url('../../img/top-line.png');
+  background-repeat: repeat-x;
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.logo {
+  position: relative;
+
+  width: 8rem;
+  padding-bottom: 6.4rem;
+}
+
+.nav {
+  display: none;
+}
