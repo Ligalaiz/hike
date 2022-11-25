@@ -10,6 +10,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: 659.99px) {
+      justify-content: space-between;
+    }
+  }
+
+  &.active {
+    position: fixed;
+    width: 100%;
+    padding: 0.6rem 0;
+
+    background-image: unset;
+    background-color: $white-100;
+
+    z-index: 100;
   }
 }
 
@@ -18,8 +33,60 @@
 
   width: 8rem;
   padding-bottom: 6.4rem;
+
+  &.active {
+    width: 4rem;
+    padding-bottom: 3.2rem;
+  }
 }
 
 .nav {
   display: none;
+
+  @media (min-width: 659.99px) {
+    display: block;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2.4rem;
+    }
+
+    &__item {
+      display: none;
+
+      &--tablet {
+        display: block;
+      }
+
+      &--btn {
+        display: none;
+      }
+
+      &--active {
+        display: block;
+      }
+    }
+
+    &__link {
+      @include text-15;
+    }
+  }
+
+  @media (min-width: 959.99px) {
+    &__item {
+      display: block;
+    }
+  }
 }
+
+@media (min-width: 659.99px) {
+  .main {
+    &.active {
+      padding-top: 6rem;
+    }
+  }
+}
+
+
