@@ -55,17 +55,20 @@
                 <li class="nav__item">
                   <a class="nav__link" href="#">Преимущества</a>
                 </li>
-                <li class="nav__item">
+                <li class="nav__item nav__item--tablet">
                   <a class="nav__link" href="#">Характеристики</a>
                 </li>
                 <li class="nav__item">
                   <a class="nav__link" href="#">Комплектация</a>
                 </li>
-                <li class="nav__item">
+                <li class="nav__item nav__item--tablet"">
                   <a class="nav__link" href="#">Отзывы</a>
                 </li>
-                <li class="nav__item">
+                <li class="nav__item nav__item--tablet"">
                   <a class="nav__link" href="#">Доставка/оплата</a>
+                </li>
+                <li class="nav__item nav__item--tablet nav__item--btn">
+                  <a class="btn-benefits__btn btn-order" href="#">Заказать сейчас</a>
                 </li>
               </ul>
             </nav>
@@ -76,7 +79,7 @@
         <section class="benefits">
           <div class="container">
             <h1 class="benefits__subtitle">Многофункциональная лопата +пила +топор +нож</h1>
-            <h2 class="benefits__title">Походный <span class="benefits__title--yellow">набор 4 в 1</span></h2>
+            <h2 class="benefits__title">Походный <span class="benefits__title--yellow">набор&nbsp;4&nbsp;в&nbsp;1</span></h2>
             <div class="benefits__content">
               <div class="benefits__left">
                 <div class="benefits__guarantee">
@@ -100,9 +103,9 @@
                 <div class="right-benefits__term-benefits term-benefits">
                   <p class="term-benefits__text">Успей пока цена снижена:</p>
                   <div class="term-benefits__timer timer-benefits">
-                    <div class="timer-benefits__hours">13ч</div>
-                    <div class="timer-benefits__min">38м</div>
-                    <div class="timer-benefits__sec">42с</div>
+                    <div class="timer-benefits__item timer-benefits__item--hours">13ч&nbsp;:&nbsp;</div>
+                    <div class="timer-benefits__item timer-benefits__item--min">38м&nbsp;:&nbsp;</div>
+                    <div class="timer-benefits__item timer-benefits__item--sec">42с</div>
                   </div>
                 </div>
               </div>
@@ -166,7 +169,7 @@
               <span class="excellence__title--green">Лучшее снаряжение</span> для активного отдыха
             </h2>
             <ul class="excellence__list">
-              <li class="excellence__item item-exellence">
+              <li class="excellence__item item-exellence item-exellence--material">
                 <div class="item-exellence__wrap">
                   <p class="item-exellence__title">Особо прочные материалы</p>
                   <p class="item-exellence__text">
@@ -175,7 +178,7 @@
                   </p>
                 </div>
               </li>
-              <li class="excellence__item item-exellence">
+              <li class="excellence__item item-exellence item-exellence--long-term">
                 <div class="item-exellence__wrap">
                   <p class="item-exellence__title">Долгое время не нуждается в заточке</p>
                   <p class="item-exellence__text">
@@ -184,7 +187,7 @@
                   </p>
                 </div>
               </li>
-              <li class="excellence__item item-exellence">
+              <li class="excellence__item item-exellence item-exellence--bag">
                 <div class="item-exellence__wrap">
                   <p class="item-exellence__title">Весь комплект в&nbsp;1&nbsp;подсумке</p>
                   <p class="item-exellence__text">
@@ -259,8 +262,8 @@
                 <div class="right-characteristic__img-wrap">
                   <img class="right-characteristic__img" src="../../assets/img/tools.png" alt="tools" />
                 </div>
+                <a class="right-characteristic__btn btn-order" href="#">Заказать со скидкой</a>
               </div>
-              <a class="right-characteristic__btn btn-order" href="#">Заказать со скидкой</a>
             </div>
           </div>
         </section>
@@ -274,10 +277,12 @@
                     <div class="message__photo-wrap">
                       <img class="message__photo" src="../../assets/img/person-1.jpg" alt="person" />
                     </div>
-                    <div class="message__data">
-                      <p class="message__name">Александр Уваров</p>
-                      <p class="message__age">36 лет, г. Пермь</p>
-                    </div>
+                    <ul class="message__data">
+                      <li class="message__name">Александр Уваров</li>
+                      <li class="message__age">36 лет, г. Пермь</li>
+                      <li class="message__time-mob">5 часов назад</li>
+                      <li class="message__rating"></li>
+                    </ul>
                   </div>
                   <div class="message__time">5 часов назад</div>
                 </div>
@@ -292,10 +297,12 @@
                     <div class="message__photo-wrap">
                       <img class="message__photo" src="../../assets/img/person-2.jpg" alt="person" />
                     </div>
-                    <div class="message__data">
-                      <p class="message__name">Александр Бычок</p>
-                      <p class="message__age">26 лет, г. Нижний Новгород</p>
-                    </div>
+                    <ul class="message__data">
+                      <li class="message__name">Александр Бычок</li>
+                      <li class="message__age">26 лет, г. Нижний Новгород</li>
+                      <li class="message__time-mob">17 часов назад</li>
+                      <li class="message__rating"></li>
+                    </ul>
                   </div>
                   <div class="message__time">17 часов назад</div>
                 </div>
@@ -310,10 +317,12 @@
                     <div class="message__photo-wrap">
                       <img class="message__photo" src="../../assets/img/person-3.jpg" alt="person" />
                     </div>
-                    <div class="message__data">
-                      <p class="message__name">Максим</p>
-                      <p class="message__age">37 лет, г. Пенза</p>
-                    </div>
+                    <ul class="message__data">
+                      <li class="message__name">Максим</li>
+                      <li class="message__age">37 лет, г. Пенза</li>
+                      <li class="message__time-mob">Вчера</li>
+                      <li class="message__rating"></li>
+                    </ul>
                   </div>
                   <div class="message__time">Вчера</div>
                 </div>
@@ -325,10 +334,12 @@
                     <div class="message__photo-wrap">
                       <img class="message__photo" src="../../assets/img/person-4.jpg" alt="person" />
                     </div>
-                    <div class="message__data">
-                      <p class="message__name">Олег Петров</p>
-                      <p class="message__age">41 год, г. Москва</p>
-                    </div>
+                    <ul class="message__data">
+                      <li class="message__name">Олег Петров</li>
+                      <li class="message__age">41 год, г. Москва</li>
+                      <li class="message__time-mob">Вчера</li>
+                      <li class="message__rating"></li>
+                    </ul>
                   </div>
                   <div class="message__time">Вчера</div>
                 </div>
@@ -346,26 +357,26 @@
           <div class="container">
             <div class="delivery__title">Доставка и оплата</div>
             <ul class="delivery__list">
-              <li class="delivery__item item-delivery">
+              <li class="delivery__item item-delivery item-delivery__order">
                 <div class="item-delivery__title">Заказ</div>
                 <p class="item-delivery__text">
                   <a class="item-delivery__link" href="#">Заполните форму</a>
                   обратной связи и наш менеджер перезвонит для уточнения деталей заказа.
                 </p>
               </li>
-              <li class="delivery__item item-delivery">
+              <li class="delivery__item item-delivery item-delivery__pack">
                 <div class="item-delivery__title">Упаковка</div>
                 <p class="item-delivery__text">
                   Мы бережно и надёжно упакуем ваш заказ и доставим его к вам целым и невредимым.
                 </p>
               </li>
-              <li class="delivery__item item-delivery">
+              <li class="delivery__item item-delivery item-delivery__delivery item-delivery__delivery--green">
                 <div class="item-delivery__title">Доставка</div>
                 <p class="item-delivery__text">
                   Отправим вашу лопату в день заказа. Доставка почтой в течение 3‑10 дней в зависимости от региона.
                 </p>
               </li>
-              <li class="delivery__item item-delivery">
+              <li class="delivery__item item-delivery item-delivery__few">
                 <div class="item-delivery__title">Оплата</div>
                 <p class="item-delivery__text">
                   Никаких предоплат! Вы оплачиваете заказ после получения набора на почте.
@@ -377,29 +388,32 @@
         <section class="form">
           <div class="container">
             <p class="form__subtitle">Многофункциональная лопата +пила +топор +нож</p>
-            <h2 class="form__title">Походный набор 4 в 1</h2>
+            <h2 class="form__title">Походный <span class="form__title--yellow">набор 4 в 1</span></h2>
             <div class="form__content">
               <div class="form__left">
-                <div class="form__guarantee">до <span>10</span> лет гарантии</div>
+                <div class="form__guarantee">
+                  до&nbsp;<span class="form__guarantee--bold">10</span>&nbsp;лет гарантии
+                </div>
               </div>
               <div class="form__right right-form">
-                <p class="right-form__title">Заполните форму&nbsp;заказа</p>
-                <p class="right-form__subtitle">
-                  и наш менеджер перезвонит вам для уточнения деталей заказа. <span>Звонок для вас бесплатный!</span>
-                </p>
-                <p class="right-form__price"><span>3980 руб.</span> 1990 руб.</p>
-                <form class="right-form__form">
-                  <input class="right-form__field right-form__field--name" type="text" placeholder="Ваше имя" />
-                  <input class="right-form__field right-form__field--phone" type="text" placeholder="Ваше телефон" />
-                  <button class="right-form___btn btn-order" href="#">Заказать сейчас</button>
-                </form>
-                <div class="right-form___timer-benefits term-benefits">
-                  <p class="term-benefits__text">Успей пока цена снижена:</p>
-                  <div class="term-benefits__timer timer-benefits">
-                    <div class="timer-benefits__hours">13ч</div>
-                    <div class="timer-benefits__min">38м</div>
-                    <div class="timer-benefits__sec">42с</div>
-                  </div>
+                <div class="right-form__wrap">
+                  <p class="right-form__title">Заполните форму&nbsp;заказа</p>
+                  <p class="right-form__subtitle">и наш менеджер перезвонит вам для уточнения деталей заказа.</p>
+                  <p class="right-form__text">Звонок для вас бесплатный!</p>
+                  <p class="right-form__price"><span class="right-form__price--old">3980 руб.</span> 1990 руб.</p>
+                  <form class="right-form__form">
+                    <input class="right-form__field right-form__field--name" type="text" placeholder="Ваше имя" />
+                    <input class="right-form__field right-form__field--phone" type="text" placeholder="Ваше телефон" />
+                    <button class="right-form__btn btn-order" href="#">Заказать сейчас</button>
+                  </form>
+                </div>
+                <div class="right-form__term-form term-form">
+                  <p class="term-form__text">Успей пока цена снижена:</p>
+                  <ul class="term-form__timer timer-form">
+                    <li class="timer-form__item timer-form__item--hours">13ч :&nbsp;</li>
+                    <li class="timer-form__item timer-form__item--min">38м :&nbsp;</li>
+                    <li class="timer-form__item timer-form__item--sec">42с</li>
+                  </ul>
                 </div>
               </div>
             </div>
