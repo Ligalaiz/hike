@@ -9,6 +9,15 @@
     @include fontz(1.8rem, 1.4, $black-030);
     text-align: center;
     text-transform: uppercase;
+
+    @media (min-width: 659.99px) {
+      @include header-24;
+      line-height: 1.4;
+    }
+
+    @media (min-width: 959.99px) {
+      line-height: 1.2;
+    }
   }
 
   &__title {
@@ -18,6 +27,16 @@
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
+
+    @media (min-width: 659.99px) {
+      margin-bottom: 5rem;
+
+      font-size: 3rem;
+    }
+
+    @media (min-width: 959.99px) {
+      font-size: 3.1rem;
+    }
 
     &--green {
       color: $green-919;
@@ -29,6 +48,10 @@
 
     @include text-16;
     text-align: center;
+
+    @media (min-width: 659.99px) {
+      margin-bottom: 5rem;
+    }
   }
 
   &__list {
@@ -36,6 +59,18 @@
     flex-direction: column;
     gap: 3rem;
     margin-bottom: 6rem;
+
+    @media (min-width: 659.99px) {
+      flex-wrap: wrap;
+      align-items: stretch;
+      align-content: stretch;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    @media (min-width: 959.99px) {
+      gap: 1rem;
+    }
   }
 
   &__item {
@@ -48,8 +83,13 @@
     position: relative;
 
     width: 100%;
-    max-width: 27rem;
+    width: 27rem;
     padding-bottom: 20.3rem;
+
+    @media (min-width: 659.99px) {
+      width: 29.6rem;
+      padding-bottom: 22.1rem;
+    }
   }
 
   &__img {
@@ -64,6 +104,11 @@
 }
 
 .reason-tools {
+  @media (min-width: 959.99px) {
+    display: flex;
+    gap: 3rem;
+  }
+
   &__left {
     overflow: hidden;
     border-radius: 0.7rem;
@@ -79,17 +124,35 @@
 }
 
 .right-reason {
+  @media (min-width: 959.99px) {
+    width: 100%;
+    max-width: 34.4rem;
+    margin-bottom: 2rem;
+  }
+
   &__title {
     margin-bottom: 1.5rem;
 
     @include text-19;
     text-align: center;
     font-weight: 700;
+
+    @media (min-width: 659.99px) {
+      margin-bottom: 2rem;
+    }
+
+    @media (min-width: 959.99px) {
+      text-align: left;
+    }
   }
 
   &__text {
     margin-bottom: 2rem;
 
     @include text-16;
+
+    @media (min-width: 659.99px) {
+      margin-bottom: 1.4rem;
+    }
   }
 }
