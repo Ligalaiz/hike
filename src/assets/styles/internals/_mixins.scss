@@ -21,7 +21,7 @@
   font-weight: 700;
 }
 
-@mixin header30 {
+@mixin header-30 {
   @include fontz(3rem, 1, $black-100);
   font-weight: 700;
 }
