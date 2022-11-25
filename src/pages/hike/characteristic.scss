@@ -5,6 +5,10 @@
 
   background-color: $grey-f4f;
 
+  @media (min-width: 959.99px) {
+    padding: 5rem 0;
+  }
+
   &__subtitle {
     margin-bottom: 0.5rem;
 
@@ -13,6 +17,12 @@
     color: $black-030;
     text-align: center;
     text-transform: uppercase;
+
+    @media (min-width: 659.99px) {
+      margin: unset;
+
+      font-size: 2.1rem;
+    }
   }
 
   &__title {
@@ -23,20 +33,43 @@
     color: $black-030;
     text-align: center;
     text-transform: uppercase;
+
+    @media (min-width: 659.99px) {
+      margin-bottom: 5rem;
+
+      font-size: 3rem;
+    }
+
+    @media (min-width: 959.99px) {
+      font-size: 3.1rem;
+    }
   }
 
   &__table {
+    width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    margin-bottom: 3rem;
+    margin: 0 auto 3rem;
+
+    @media (min-width: 959.99px) {
+      margin-bottom: 6.5rem;
+    }
 
     & td {
       font-size: 1.4rem;
+
+      @media (min-width: 659.99px) {
+        font-size: 1.5rem;
+      }
     }
 
     & td:nth-child(odd) {
-      padding: 1.3rem 0 1.3rem 0.5rem;
+      padding: 0.5rem 0 0.5rem 0.5rem;
       border-radius: 0.5rem 0 0 0.5rem;
+
+      @media (min-width: 659.99px) {
+        padding: 0.8rem 0 0.8rem 1.5rem;
+      }
     }
 
     & tr:nth-child(odd) td {
@@ -44,8 +77,32 @@
     }
 
     & td:nth-child(even) {
-      padding: 1.3rem 0.5rem 1.3rem 0;
+      padding: 0.5rem 0.5rem 0.5rem 0;
       border-radius: 0 0.5rem 0.5rem 0;
+
+      @media (min-width: 659.99px) {
+        padding: 0.8rem 1.5rem 0.8rem 0;
+      }
+    }
+  }
+
+  &__content {
+    @media (min-width: 959.99px) {
+      display: flex;
+      justify-content: space-between;
+      gap: 4rem;
+    }
+  }
+
+  &__left {
+    width: 100%;
+    max-width: 64rem;
+    margin: 0 auto 3rem;
+
+    @media (min-width: 959.99px) {
+      width: 100%;
+      max-width: 50rem;
+      margin: unset;
     }
   }
 }
@@ -70,14 +127,14 @@
     position: relative;
 
     width: 100%;
-    max-width: 30rem;
+    max-width: 64rem;
     margin: 0 auto;
 
     &:before {
       content: '';
       position: absolute;
 
-      right: 1rem;
+      right: 2rem;
       top: 50%;
 
       width: 1rem;
@@ -87,6 +144,10 @@
       border-right: none;
 
       transform: translateY(-50%) rotate(-45deg);
+
+      @media (min-width: 959.99px) {
+        right: 3rem;
+      }
     }
 
     &.active:before {
@@ -104,7 +165,7 @@
 
   &__btn {
     width: 100%;
-    max-width: 30rem;
+    min-width: 30rem;
     border-radius: 0.6rem;
     padding: 1.5rem;
 
@@ -121,12 +182,19 @@
       line-height: 1.1;
       font-weight: 700;
       text-transform: uppercase;
+
+      @media (min-width: 959.99px) {
+        font-size: 2.3rem;
+      }
     }
   }
 }
 
 .characteristic__right {
-  margin: 3rem 0;
+  @media (min-width: 959.99px) {
+    width: 100%;
+    max-width: 36.3rem;
+  }
 }
 
 .right-characteristic {
@@ -136,6 +204,11 @@
     width: 100%;
     max-width: 30rem;
     padding-bottom: 30.6rem;
-    margin: 0 auto;
+    margin: 0 auto 3rem;
+
+    @media (min-width: 659.99px) {
+      max-width: 36.3rem;
+      padding-bottom: 37.5rem;
+    }
   }
 }
