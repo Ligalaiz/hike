@@ -8,6 +8,10 @@
   background-repeat: no-repeat;
   background-position: center top;
 
+  @media (min-width: 659.99px) {
+    padding-bottom: 7rem;
+  }
+
   &__subtitle {
     margin-bottom: 0.5rem;
 
@@ -16,6 +20,11 @@
     color: $black-030;
     text-transform: uppercase;
     text-align: center;
+
+    @media (min-width: 659.99px) {
+      margin-bottom: unset;
+      font-size: 2.4rem;
+    }
   }
 
   &__title {
@@ -27,6 +36,16 @@
     text-transform: uppercase;
     text-align: center;
 
+    @media (min-width: 659.99px) {
+      font-size: 3rem;
+    }
+
+    @media (min-width: 959.99px) {
+      margin-bottom: 5rem;
+
+      font-size: 3.1rem;
+    }
+
     &--green {
       color: $green-919;
     }
@@ -37,10 +56,19 @@
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+
+    @media (min-width: 659.99px) {
+      justify-content: center;
+      align-items: stretch;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 3rem 2rem;
+    }
   }
 }
 
 .item-exellence {
+  display: flex;
   width: 28rem;
   padding-top: 5.7rem;
 
@@ -66,10 +94,19 @@
       background-image: url('../../img/excellence-icon.png');
       background-color: $white-100;
       background-repeat: no-repeat;
-      background-position: 0 center;
 
       transform: translate(-50%);
     }
+  }
+
+  &--material &__wrap:before {
+    background-position: 0 center;
+  }
+  &--long-term &__wrap:before {
+    background-position: -11.3rem center;
+  }
+  &--bag &__wrap:before {
+    background-position: -22.7rem center;
   }
 
   &__title {
