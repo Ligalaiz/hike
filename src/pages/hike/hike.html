@@ -44,7 +44,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header" id="header">
         <div class="container">
           <div class="header__wrap">
             <div class="header__logo logo">
@@ -61,14 +61,14 @@
                 <li class="nav__item">
                   <a class="nav__link" href="#">Комплектация</a>
                 </li>
-                <li class="nav__item nav__item--tablet"">
+                <li class="nav__item nav__item--tablet">
                   <a class="nav__link" href="#">Отзывы</a>
                 </li>
-                <li class="nav__item nav__item--tablet"">
+                <li class="nav__item nav__item--tablet">
                   <a class="nav__link" href="#">Доставка/оплата</a>
                 </li>
                 <li class="nav__item nav__item--tablet nav__item--btn">
-                  <a class="btn-benefits__btn btn-order" href="#">Заказать сейчас</a>
+                  <a class="nav__item__btn btn-order" href="#">Заказать сейчас</a>
                 </li>
               </ul>
             </nav>
@@ -79,7 +79,9 @@
         <section class="benefits">
           <div class="container">
             <h1 class="benefits__subtitle">Многофункциональная лопата +пила +топор +нож</h1>
-            <h2 class="benefits__title">Походный <span class="benefits__title--yellow">набор&nbsp;4&nbsp;в&nbsp;1</span></h2>
+            <h2 class="benefits__title">
+              Походный <span class="benefits__title--yellow">набор&nbsp;4&nbsp;в&nbsp;1</span>
+            </h2>
             <div class="benefits__content">
               <div class="benefits__left">
                 <div class="benefits__guarantee">
@@ -98,14 +100,21 @@
                     <p class="btn-benefits__price-old">3980 руб.</p>
                     <p class="btn-benefits__price-new">1990 руб.</p>
                   </div>
-                  <a class="btn-benefits__btn btn-order" href="#">Заказать сейчас</a>
+                  <a class="btn-benefits__btn btn-order" href="#"
+                    >Заказать сейчас
+                    <div class="animate"></div>
+                  </a>
                 </div>
                 <div class="right-benefits__term-benefits term-benefits">
                   <p class="term-benefits__text">Успей пока цена снижена:</p>
                   <div class="term-benefits__timer timer-benefits">
-                    <div class="timer-benefits__item timer-benefits__item--hours">13ч&nbsp;:&nbsp;</div>
-                    <div class="timer-benefits__item timer-benefits__item--min">38м&nbsp;:&nbsp;</div>
-                    <div class="timer-benefits__item timer-benefits__item--sec">42с</div>
+                    <div class="timer-benefits__item timer-benefits__item--hours">
+                      <span id="hoursFirst"></span>ч :&nbsp;
+                    </div>
+                    <div class="timer-benefits__item timer-benefits__item--min">
+                      <span id="minFirst"></span>м :&nbsp;
+                    </div>
+                    <div class="timer-benefits__item timer-benefits__item--sec"><span id="secFirst"></span>с</div>
                   </div>
                 </div>
               </div>
@@ -157,7 +166,10 @@
                   Не знаете что подарить своему любимому мужчине? Походный набор станет идеальным подарком по любому
                   поводу!
                 </p>
-                <a class="right-reason__btn btn-order" href="#">Оформить заказ</a>
+                <a class="right-reason__btn btn-order" href="#"
+                  >Оформить заказ
+                  <div class="animate"></div>
+                </a>
               </div>
             </div>
           </div>
@@ -239,11 +251,11 @@
                 </table>
                 <div class="characteristic__guarantee guarantee-characteristic">
                   <div class="guarantee-characteristic__btn-wrap">
-                    <button class="guarantee-characteristic__btn">
+                    <button class="guarantee-characteristic__btn" id="dropDownBtn">
                       <span class="guarantee-characteristic__btn--thick">10 Летняя гарантия</span> общие условия
                     </button>
                   </div>
-                  <div class="guarantee-characteristic__content-wrap">
+                  <div class="guarantee-characteristic__content-wrap" id="dropDownContent">
                     <p class="guarantee-characteristic__title">
                       Гарантия вступает в силу в день покупки и действует в течение срока, указанного ниже:
                     </p>
@@ -262,7 +274,10 @@
                 <div class="right-characteristic__img-wrap">
                   <img class="right-characteristic__img" src="../../assets/img/tools.png" alt="tools" />
                 </div>
-                <a class="right-characteristic__btn btn-order" href="#">Заказать со скидкой</a>
+                <a class="right-characteristic__btn btn-order" href="#"
+                  >Заказать со скидкой
+                  <div class="animate"></div>
+                </a>
               </div>
             </div>
           </div>
@@ -350,7 +365,10 @@
               </li>
             </ul>
             <p class="feedback__notice">Отзывы предоставлены покупателями нашего интернет‑магазина</p>
-            <a class="feedback__btn btn-order" href="#">Заказать со скидкой</a>
+            <a class="feedback__btn btn-order" href="#"
+              >Заказать со скидкой
+              <div class="animate"></div>
+            </a>
           </div>
         </section>
         <section class="delivery">
@@ -402,17 +420,40 @@
                   <p class="right-form__text">Звонок для вас бесплатный!</p>
                   <p class="right-form__price"><span class="right-form__price--old">3980 руб.</span> 1990 руб.</p>
                   <form class="right-form__form">
-                    <input class="right-form__field right-form__field--name" type="text" placeholder="Ваше имя" />
-                    <input class="right-form__field right-form__field--phone" type="text" placeholder="Ваше телефон" />
-                    <button class="right-form__btn btn-order" href="#">Заказать сейчас</button>
+                    <div class="right-form__item">
+                      <input
+                        class="right-form__field right-form__field--name"
+                        type="text"
+                        placeholder=" "
+                        id="nameLabel"
+                      />
+                      <label class="right-form__field-title" for="nameLabel">
+                        <span class="right-form__label">Ваше имя</span>
+                      </label>
+                    </div>
+                    <div class="right-form__item">
+                      <input
+                        class="right-form__field right-form__field--phone"
+                        type="text"
+                        placeholder=" "
+                        id="phoneLabel"
+                      />
+                      <label class="right-form__field-title">
+                        <span class="right-form__label" for="phoneLabel">Ваше телефон</span>
+                      </label>
+                    </div>
+                    <button class="right-form__btn btn-order" href="#">
+                      Заказать сейчас
+                      <div class="animate"></div>
+                    </button>
                   </form>
                 </div>
                 <div class="right-form__term-form term-form">
                   <p class="term-form__text">Успей пока цена снижена:</p>
                   <ul class="term-form__timer timer-form">
-                    <li class="timer-form__item timer-form__item--hours">13ч :&nbsp;</li>
-                    <li class="timer-form__item timer-form__item--min">38м :&nbsp;</li>
-                    <li class="timer-form__item timer-form__item--sec">42с</li>
+                    <li class="timer-form__item timer-form__item--hours"><span id="hoursSec"></span>ч :&nbsp;</li>
+                    <li class="timer-form__item timer-form__item--min"><span id="minSec"></span>м :&nbsp;</li>
+                    <li class="timer-form__item timer-form__item--sec"><span id="secSec"></span>с</li>
                   </ul>
                 </div>
               </div>
