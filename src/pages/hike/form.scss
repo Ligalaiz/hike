@@ -216,8 +216,55 @@
     text-align: center;
   }
 
+  &__item {
+    position: relative;
+
+    & input:focus + label,
+    & textarea:focus + label,
+    & .select-selected.active + label,
+    & textarea:not(:placeholder-shown) + label,
+    & input:not(:placeholder-shown) + label {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    & input:focus + label span,
+    & textarea:focus + label span,
+    & .select-selected.active + label span,
+    & textarea:not(:placeholder-shown) + label span,
+    & input:not(:placeholder-shown) + label span {
+      animation: hidden 0.3s forwards;
+    }
+  }
+
+  &__field-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include text-18;
+
+    pointer-events: none;
+    transition: opacity 0.2s;
+    opacity: 1;
+
+    background-color: transparent;
+  }
+
   &__btn {
     width: 100%;
+  }
+}
+
+@keyframes hidden {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
 

@@ -16,15 +16,50 @@
     }
   }
 
-  &.active {
-    position: fixed;
-    width: 100%;
-    padding: 0.6rem 0;
+  @media (min-width: 659.99px) {
+    &.active + .main {
+      padding-top: 11.4rem;
+    }
 
-    background-image: unset;
-    background-color: $white-100;
+    &.active {
+      position: fixed;
+      width: 100%;
+      padding: 0.6rem 0;
 
-    z-index: 100;
+      background-image: unset;
+      background-color: $white-100;
+      box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
+
+      z-index: 100;
+
+      animation: smoothHeader 2s;
+    }
+
+    &.active .logo {
+      width: 4rem;
+      padding-bottom: 3.2rem;
+    }
+
+    &.active .nav__list {
+      gap: 2.2rem;
+    }
+
+    &.active .nav__item--btn {
+      display: block;
+    }
+
+    &.active .nav__link {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@keyframes smoothHeader {
+  from {
+    transform: translateY(-150%);
+  }
+  to {
+    transform: translateY(0);
   }
 }
 
@@ -33,11 +68,6 @@
 
   width: 8rem;
   padding-bottom: 6.4rem;
-
-  &.active {
-    width: 4rem;
-    padding-bottom: 3.2rem;
-  }
 }
 
 .nav {
@@ -64,8 +94,15 @@
         display: none;
       }
 
-      &--active {
-        display: block;
+      &__btn.btn-order {
+        justify-content: center;
+        width: 20rem;
+        height: 4.8rem;
+        margin: unset;
+
+        font-size: 1.4rem;
+
+        z-index: 10;
       }
     }
 
@@ -77,16 +114,10 @@
   @media (min-width: 959.99px) {
     &__item {
       display: block;
+
+      &--btn {
+        display: none;
+      }
     }
   }
 }
-
-@media (min-width: 659.99px) {
-  .main {
-    &.active {
-      padding-top: 6rem;
-    }
-  }
-}
-
-

@@ -3,6 +3,12 @@
 .tools {
   padding-top: 4rem;
 
+  @media (min-width: 959.99px) {
+    max-width: 192rem;
+
+    background: url('../../img/tools-bg.jpg') no-repeat center top;
+  }
+
   &__subtitle {
     margin-bottom: 0.5rem;
 
