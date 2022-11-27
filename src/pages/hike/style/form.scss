@@ -1,4 +1,4 @@
-@use '../../assets/styles/internals/index';
+@use '../../../assets/styles/internals/index';
 
 .form {
   position: relative;
@@ -269,6 +269,13 @@
 }
 
 .term-form {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+  padding: 0 1.5rem;
+  gap: 0.5rem;
+
   &__text {
     margin-bottom: 0.3rem;
 
@@ -277,23 +284,31 @@
     line-height: 1.2;
     text-align: center;
   }
-
-  @media (min-width: 659.99px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
 }
 
 .timer-form {
-  display: flex;
-  justify-content: center;
+  position: relative;
+
+  width: 10.6rem;
 
   &__item {
+    position: absolute;
+
     @include text-14;
     color: $yellow-fdb;
-    line-height: 1.7;
     font-weight: 700;
+
+    &--hours {
+      left: 0;
+    }
+
+    &--min {
+      left: 50%;
+      transform: translateX(-33%);
+    }
+
+    &--sec {
+      right: 0;
+    }
   }
 }
