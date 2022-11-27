@@ -1,4 +1,4 @@
-document.addEventListener('click', (e) => {
+const handleDropdownClick = (e) => {
   const { target } = e;
 
   if (target.closest('#dropDownBtn')) {
@@ -11,4 +11,6 @@ document.addEventListener('click', (e) => {
       parent.classList.remove('active');
     }
   }
-});
+};
+
+export { handleDropdownClick };
