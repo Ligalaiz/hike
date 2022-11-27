@@ -53,22 +53,22 @@
             <nav class="header__nav nav">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a class="nav__link" href="#">Преимущества</a>
+                  <a class="nav__link" href="#toolsAnchor">Преимущества</a>
                 </li>
                 <li class="nav__item nav__item--tablet">
-                  <a class="nav__link" href="#">Характеристики</a>
+                  <a class="nav__link" href="#characteristicAnchor">Характеристики</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="#">Комплектация</a>
+                  <a class="nav__link" href="#equipment">Комплектация</a>
                 </li>
                 <li class="nav__item nav__item--tablet">
-                  <a class="nav__link" href="#">Отзывы</a>
+                  <a class="nav__link" href="#feedbackAnchor">Отзывы</a>
                 </li>
                 <li class="nav__item nav__item--tablet">
-                  <a class="nav__link" href="#">Доставка/оплата</a>
+                  <a class="nav__link" href="#deliveryAnchor">Доставка/оплата</a>
                 </li>
                 <li class="nav__item nav__item--tablet nav__item--btn">
-                  <a class="nav__item__btn btn-order" href="#">Заказать сейчас</a>
+                  <a class="nav__item__btn btn-order" href="#form">Заказать сейчас</a>
                 </li>
               </ul>
             </nav>
@@ -100,7 +100,7 @@
                     <p class="btn-benefits__price-old">3980 руб.</p>
                     <p class="btn-benefits__price-new">1990 руб.</p>
                   </div>
-                  <a class="btn-benefits__btn btn-order" href="#"
+                  <a class="btn-benefits__btn btn-order" href="#form"
                     >Заказать сейчас
                     <div class="animate"></div>
                   </a>
@@ -121,7 +121,7 @@
             </div>
           </div>
         </section>
-        <section class="tools">
+        <section class="tools" id="toolsAnchor">
           <div class="container">
             <p class="tools__subtitle">Походный набор</p>
             <h2 class="tools__title">
@@ -166,7 +166,7 @@
                   Не знаете что подарить своему любимому мужчине? Походный набор станет идеальным подарком по любому
                   поводу!
                 </p>
-                <a class="right-reason__btn btn-order" href="#"
+                <a class="right-reason__btn btn-order" href="#form"
                   >Оформить заказ
                   <div class="animate"></div>
                 </a>
@@ -211,7 +211,7 @@
             </ul>
           </div>
         </section>
-        <section class="characteristic">
+        <section class="characteristic" id="characteristicAnchor">
           <div class="container">
             <p class="characteristic__subtitle">новые стандарты качества и функциональности!</p>
             <h2 class="characteristic__title">Технические характеристики набора</h2>
@@ -274,7 +274,7 @@
                 <div class="right-characteristic__img-wrap">
                   <img class="right-characteristic__img" src="../../assets/img/tools.png" alt="tools" />
                 </div>
-                <a class="right-characteristic__btn btn-order" href="#"
+                <a class="right-characteristic__btn btn-order" href="#form"
                   >Заказать со скидкой
                   <div class="animate"></div>
                 </a>
@@ -282,7 +282,7 @@
             </div>
           </div>
         </section>
-        <section class="feedback">
+        <section class="feedback" id="feedbackAnchor">
           <div class="container">
             <h2 class="feedback__title">Отзывы наших покупателей</h2>
             <ul class="feedback__list">
@@ -365,20 +365,20 @@
               </li>
             </ul>
             <p class="feedback__notice">Отзывы предоставлены покупателями нашего интернет‑магазина</p>
-            <a class="feedback__btn btn-order" href="#"
+            <a class="feedback__btn btn-order" href="#form"
               >Заказать со скидкой
               <div class="animate"></div>
             </a>
           </div>
         </section>
-        <section class="delivery">
+        <section class="delivery" id="deliveryAnchor">
           <div class="container">
-            <div class="delivery__title">Доставка и оплата</div>
+            <h2 class="delivery__title">Доставка и оплата</div>
             <ul class="delivery__list">
               <li class="delivery__item item-delivery item-delivery__order">
                 <div class="item-delivery__title">Заказ</div>
                 <p class="item-delivery__text">
-                  <a class="item-delivery__link" href="#">Заполните форму</a>
+                  <a class="item-delivery__link" href="#form">Заполните форму</a>
                   обратной связи и наш менеджер перезвонит для уточнения деталей заказа.
                 </p>
               </li>
@@ -419,7 +419,7 @@
                   <p class="right-form__subtitle">и наш менеджер перезвонит вам для уточнения деталей заказа.</p>
                   <p class="right-form__text">Звонок для вас бесплатный!</p>
                   <p class="right-form__price"><span class="right-form__price--old">3980 руб.</span> 1990 руб.</p>
-                  <form class="right-form__form">
+                  <form class="right-form__form" id="form">
                     <div class="right-form__item">
                       <input
                         class="right-form__field right-form__field--name"
@@ -438,13 +438,13 @@
                         placeholder=" "
                         id="phoneLabel"
                       />
-                      <label class="right-form__field-title">
-                        <span class="right-form__label" for="phoneLabel">Ваше телефон</span>
+                      <label class="right-form__field-title" for="phoneLabel">
+                        <span class="right-form__label" >Ваше телефон</span>
                       </label>
                     </div>
-                    <button class="right-form__btn btn-order" href="#">
+                    <button class="right-form__btn btn-order" type="submit">
                       Заказать сейчас
-                      <div class="animate"></div>
+                      <span class="animate"></div>
                     </button>
                   </form>
                 </div>
