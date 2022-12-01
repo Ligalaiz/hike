@@ -1,6 +1,6 @@
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs) [![Maintainability](https://api.codeclimate.com/v1/badges/6852c86afad0232b9c3d/maintainability)](https://codeclimate.com/github/Ligalaiz/hike/maintainability) [![Netlify Status](https://api.netlify.com/api/v1/badges/3aed10c2-4ad3-465a-af39-f6c839f52105/deploy-status)](https://app.netlify.com/sites/hiking-ligalaiz/deploys)
 
-# Cart
+# Hike
 
 Hiking tools. Demo: [link](https://hiking-ligalaiz.netlify.app/hike.html/)
 
